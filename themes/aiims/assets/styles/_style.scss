@@ -1,0 +1,113 @@
+header {
+    backdrop-filter: blur(22px);
+    background: #b00020;
+}
+
+main.homepage {
+    #mission-cards-slider {
+        .slick-track {
+            display: flex;
+        }
+
+        .slick-slide {
+            height: inherit;
+            margin: 0 5px;
+        }
+    }
+
+    .wave {
+        -webkit-animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+        animation: swell 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    }
+
+    @keyframes swell {
+
+        0%,
+        100% {
+            transform: rotate3d(1, 0, 0, 0deg);
+        }
+
+        50% {
+            transform: rotate3d(1, 0, 0, 45deg);
+        }
+    }
+}
+
+main.homepage,
+main.membershipPage,
+main.contactUsPage {
+
+    input.form-control,
+    select.form-control,
+    textarea.form-control {
+        border-radius: 6px;
+        border: 1px solid #dcdbdb;
+        padding: 10px 35px;
+        width: 100%;
+        outline: none;
+        box-shadow: none;
+        font-size: 18px;
+
+        @media screen and (max-width: 540px) {
+            padding: 4px 16px;
+        }
+    }
+
+    input.form-control,
+    select.form-control,
+    .form-button {
+        height: 75px;
+
+        @media screen and (max-width: 540px) {
+            height: 50px;
+        }
+    }
+
+    .form-button {
+        border-radius: 100px;
+        background: #b00020;
+        color: #ffffff;
+        width: 100%;
+        font-weight: 700;
+    }
+}
+
+main.defaultPage {
+    font-size: 18px;
+
+    @media screen and (max-width: 540px) {
+        font-size: 16px;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-size: 48px;
+        font-weight: 700;
+
+        @media screen and (max-width: 540px) {
+            font-size: 28px;
+        }
+    }
+
+    a {
+        color: #001e95;
+    }
+
+    p,
+    ul,
+    ol {
+        padding-bottom: 16px;
+    }
+
+    ul {
+        padding-inline-start: 24px;
+
+        li {
+            list-style: disc;
+        }
+    }
+}
